@@ -2,13 +2,11 @@
 From Part 2_Deploying Active Directory around minute (12:04)
 -->
 
-# Active Directory Users And Computers
-
 <p align="center">
 <img src="https://github.com/user-attachments/assets/6dd2e501-535b-4c4c-9244-dd088bb76696" alt="Microsoft Active Directory Logo"/>
 </p>
 
-Overview
+# Chapter 4: Create Organizational Units and Users in Active Directory
 
 1. We will create two organizational units, `_EMPLOYEES` and `_ADMINS`
 2. Then we will create an user (`Jane Doe`) and add this user to the `_ADMINS` organizational unit.
@@ -32,7 +30,7 @@ Overview
 - Part 1: [Create Organizational Units](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-organizational-units)
 - Part 2: [Create a New User in Active Directory](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-a-new-user-in-active-directory)
 - Part 3: [Add New User to the DOMAIN ADMINS Security Group](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#add-new-user-to-domain-admins-security-group)
-- Part 4: [View New Admin User's `Member Of` tab as well as the DOMAIN ADMINS `Members` tab to confirm our changes]()
+- Part 4: [View New Admin User's `Member Of` tab as well as the DOMAIN ADMINS `Members` tab to confirm our changes](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#view-new-admin-users-member-of-tab-as-well-as-the-domain-admins-members-tab-to-confirm-our-changes)
 
 
 

@@ -1,3 +1,7 @@
+<!--
+From Part 2_Deploying Active Directory around minute (12:04)
+-->
+
 # Active Directory Users And Computers
 
 <p align="center">
@@ -7,10 +11,45 @@
 Overview
 
 1. We will create two organizational units, `_EMPLOYEES` and `_ADMINS`
-2. We will create an admin user.
+2. Then we will create an user (`Jane Doe`) and add this user to the `_ADMINS` organizational unit.
+3. Then we will add our new user (`Jane Doe`) to the **DOMAIN ADMINS** Security Group, thus making her an admin user.
+4. Finally we will confirm that new admin user `Jane Doe` exists in the `Domain Admins` Members tab, as well as viewing `Jane Doe`'s `Member Of` tab.
+
+
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Active Directory Domain Services
+
+<h2>Operating Systems Used </h2>
+
+- Windows Server 2022
+- Windows 10 Pro (21H2)
+
+<h2>High-Level Deployment and Configuration Steps</h2>
+
+- Part 1: [Create Organizational Units](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-organizational-units)
+- Part 2: [Create a New User in Active Directory](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-a-new-user-in-active-directory)
+- Part 3: [Add New User to the DOMAIN ADMINS Security Group](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#add-new-user-to-domain-admins-security-group)
+- Part 4: [View New Admin User's `Member Of` tab as well as the DOMAIN ADMINS `Members` tab to confirm our changes]()
+
+
+
+<h2>Prerequisites</h2>
+
+- Complete [Chapter 1 of this series, Installing a Windows 10 Pro (Client) and Windows 2022 Server (Domain Controller).](https://github.com/ian-bates-it/Azure-Virtual-Machine-Setup)
+- Complete [Chapter 2 of this series, Configuring the DNS settings on a Client and Domain Controller VM.](https://github.com/ian-bates-it/Azure-Controller-Client-Configuration)
+- Complete [Chapter 3 of this series, Installing Active Directory on a Windows 2022 Server VM and promoting it to a Domain Controller.](https://github.com/ian-bates-it/Install-Active-Directory-on-Windows-2022-Server)
+
+
+<br />
+<br />
+
 
 ---
-<br />
+
+<h1>Part 1:</h1>
 
 <h2>Create Organizational Units</h2>
 
@@ -95,10 +134,13 @@ Overview
   <img src="https://github.com/user-attachments/assets/c67e8525-ea07-4fdd-9134-b2a8fac94f6e" height="40%" width="40%" />
 
 
----
----
+
 <br />
 <br />
+
+---
+
+<h1>Part 2:</h1>
 
 <h2>Create A New User in Active Directory</h2>
 
@@ -158,13 +200,13 @@ Overview
   <img src="https://github.com/user-attachments/assets/26536bac-8598-4dd1-994d-464a4e8d7bbe" height="50%" width="50%" />
 
 
-
-
----
----
 <br />
 <br />
 
+
+---
+
+<h1>Part 3:</h1>
 
 <h2>Add New User to Domain Admins Security Group</h2>
 
@@ -205,10 +247,19 @@ Overview
   <img src="https://github.com/user-attachments/assets/0f4e4b36-d016-4f03-aa27-0a457b42def9" height="50%" width="50%" />
 
 
----
+
+<br />
 <br />
 
-<h3>View Domain Admins To Confirm</h3>
+---
+
+<h1>Part 4:</h1>
+
+<h2>View New Admin User's `Member Of` tab as well as the DOMAIN ADMINS `Members` tab to confirm our changes</h2>
+---
+
+
+<h3>View DOMAIN ADMINS `Member` Tab To Confirm Our Changes</h3>
 
 - You can confirm that our new user `jane doe` is a member of the Domain Admins Security Group by viewing Jane Doe's `Member Of` tab.
 - You can also click on the Domain Admins Security Group and view its members as shown below.
@@ -217,13 +268,26 @@ Overview
 
   <img src="https://github.com/user-attachments/assets/f2398081-a6cc-4882-b2fe-7013f0dbb056" height="80%" width="80%" />
 
+<br />
+<br />
 
+---
 
+<h3>View User Jane Doe's `Member Of` Tab To Confirm Our Changes</h3>
 
+1. In `Active Directory Users and Computers`, Click on the `_ADMINS` organizational unit.
+2. Right-click on `Jane Doe`.
+3. Select `Properties`
+4. Select the `Member Of` tab for `Jane Doe`.
+5. View her status as a member of the DOMAIN ADMINS Security Group as shown below.
 
+<br />
 
+![image](https://github.com/user-attachments/assets/e4639c22-273f-49ba-9b33-8df6f7e4e5ab)
 
+<br />
+<br />
 
-
-
-
+<!--
+  <img src="https://github.com/user-attachments/assets/e4639c22-273f-49ba-9b33-8df6f7e4e5ab" height="100%" width="100%" />
+-->

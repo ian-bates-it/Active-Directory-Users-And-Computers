@@ -23,9 +23,16 @@ From Part 2_Deploying Active Directory around minute (12:04)
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
-- Windows 10 Pro (21H2)
 
+<!--
+- Windows 10 Pro (21H2)
+-->
+
+<!--
 <h2>High-Level Deployment and Configuration Steps</h2>
+-->
+
+<h2>High-Level Configuration Steps</h2>
 
 - Part 1: [Create Organizational Units](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-organizational-units)
 - Part 2: [Create a New User in Active Directory](https://github.com/ian-bates-it/Active-Directory-Users-And-Computers?tab=readme-ov-file#create-a-new-user-in-active-directory)
@@ -36,9 +43,11 @@ From Part 2_Deploying Active Directory around minute (12:04)
 
 <h2>Prerequisites</h2>
 
-- Complete [Chapter 1 of this series, Installing a Windows 10 Pro (Client) and Windows 2022 Server (Domain Controller).](https://github.com/ian-bates-it/Azure-Virtual-Machine-Setup)
-- Complete [Chapter 2 of this series, Configuring the DNS settings on a Client and Domain Controller VM.](https://github.com/ian-bates-it/Azure-Controller-Client-Configuration)
-- Complete [Chapter 3 of this series, Installing Active Directory on a Windows 2022 Server VM and promoting it to a Domain Controller.](https://github.com/ian-bates-it/Install-Active-Directory-on-Windows-2022-Server)
+1. Complete [Chapter 1 of this series, Creating a Windows 10 Pro and Windows 2022 Server Virtual Machines in Azure.](https://github.com/ian-bates-it/Azure-Virtual-Machine-Setup)
+
+2. Complete [Chapter 2 of this series, Configuring the DNS settings for our Windows 10 Pro (Client) and Windows 2022 Server (Domain Controller).](https://github.com/ian-bates-it/Azure-Controller-Client-Configuration)
+
+3. Complete [Chapter 3 of this series, Installing Active Directory on a Windows 2022 Server VM and promoting it to a Domain Controller.](https://github.com/ian-bates-it/Install-Active-Directory-on-Windows-2022-Server)
 
 
 <br />
